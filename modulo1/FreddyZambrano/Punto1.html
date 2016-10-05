@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+
+<style type="text/css">
+#cuerpo
+{
+	margin:auto;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	width: 1200px;
+	height: 1500px;
+	border: 1px solid black;
+	border-radius: 15px 15px 0px 0px;
+
+}
+
+#banner
+{
+	background-color: #6A2525;
+	width: 100%;
+	height: 300px;
+	border-radius: 15px 15px 15px 15px;
+
+}
+
+#centro
+{
+	background-color: black;
+	width: 100%;
+	height: 900px;
+	
+}
+
+#izquierda
+{
+	background-color: #1C684F;
+	width: 375px;
+	height: 900px;
+	float: left;
+
+}
+
+#i-arriba
+{
+	background-color: #B5D54B;
+	width: 375px;
+	height: 300px;
+	float: left;
+
+	
+}
+#i-medio
+{
+	background-color: #556A0E;
+	width: 375px;
+	height: 300px;
+	float: left;
+
+	
+}
+#i-abajo
+{
+	background-color: #303D06;
+	width: 375px;
+	height: 300px;
+	float: left;
+
+	
+}
+
+#derecha
+{
+	background-color: #1C684F;
+	width: 375px;
+	height: 900px;
+	float: right;
+
+}
+
+#d-arriba
+{
+	background-color: #B5D54B;
+	width: 375px;
+	height: 300px;
+	
+
+	
+}
+#d-medio
+{
+	background-color: #556A0E;
+	width: 375px;
+	height: 300px;
+	
+
+	
+}
+#d-abajo
+{
+	background-color: #303D06;
+	width: 375px;
+	height: 300px;
+	
+}
+
+#abajo1
+
+{
+	border: 1px solid black;
+	width: 100%;
+	height: 200px;
+	
+}
+
+#a-izquierda
+{
+	background-color: #F68710;
+	width: 450px;
+	height: 200px;
+	float: left;
+}
+
+#a-medio
+{
+	background-color: #B07536;
+	width: 300px;
+	height: 200px;
+	float: left;
+}
+
+#a-derecha
+{
+	background-color: #7A5228;
+	width: 450px;
+	height: 200px;
+	float: left;
+}
+
+
+#abajo2
+
+{
+	background-color: #0B4040;
+	width: 100%;
+	height: 100px;
+	
+}
+
+.boton
+{
+
+	margin-top: 100px;
+	border: black;
+	font-size: 15pt;
+	color: white;
+	padding: 20px;
+	cursor: pointer;
+	border-radius:  15px 15px 15px 15px;
+	box-shadow: 2px 2px 2px 2px black;
+	text-shadow: 2px 2px 2px 2px black;
+
+	background: -webkit-linear-gradient(top, #F5791B, #A75A20);
+	background: -moz-linear-gradient(top, #F5791B, #A75A20);
+	background: linear-gradient(#F5791B, #A75A20);
+
+}
+
+.boton:active
+{
+	
+	background: -webkit-linear-gradient(top, #A75A20, #F5791B);
+	background: -moz-linear-gradient(top, #A75A20, #F5791B);
+	background: linear-gradient(#A75A20, #F5791B);
+
+}
+
+
+</style>
+
+
+<body>
+
+
+	<div id="cuerpo">
+	
+	
+
+		<div id="banner">
+		<center>
+		<button class="boton" id="btn1" onclick="color('d-abajo')";> Cambiar color </button>
+
+		</center>
+	
+		</div>
+
+		<div id="centro">
+
+			<div id="izquierda">
+				<div id="i-arriba">
+
+					<center>
+
+						<button class="boton" id="btn2" onclick="color('a-derecha')"> Cambiar color </button>
+
+					</center>	
+				</div>
+
+				<div id="i-medio">
+					
+				</div>
+
+				<div id="i-abajo">
+					<center>
+
+						<button class="boton" id="btn4" onclick="color('banner')"> Cambiar color </button>
+
+					</center>
+				</div>
+			</div>
+
+			
+
+			<div id="derecha">
+
+				<div id="d-arriba">
+					<center>
+						<button class="boton" id="btn3" onclick="color('i-abajo')" > Cambiar color </button>
+					</center>
+				</div>
+
+				<div id="d-medio">
+					
+				</div>
+
+				<div id="d-abajo">
+					<center>
+						<button class="boton" id="btn5" onclick="color('a-medio')"> Cambiar color </button>
+					</center>
+				</div>
+			
+			</div>
+			
+		</div>
+
+		<div id="abajo1">
+
+			<div id="a-izquierda">
+			
+			</div>
+
+			<div id="a-medio">
+			
+			</div>
+
+
+
+
+			<div id="a-derecha">
+			
+			</div>
+			
+		</div>
+
+		<div id="abajo2">
+
+			<center>		
+			<button class="boton" id="btn6" style="margin-top: 15px" onclick="color('i-arriba')"> Cambiar color </button>
+			</center>
+			
+		</div>
+
+	</div>
+
+
+<script>
+	function color(div) 
+	{
+	document.getElementById(div).style.backgroundColor = "lightblue";
+	}
+</script>
+
+	
+
+
+ 
+
+
+
+
+
+
+
+
+</body>
+</html>

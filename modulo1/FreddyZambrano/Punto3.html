@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<script>
+var cont=0
+function cambia() {
+cont++;
+switch(cont%4+1)
+ {
+ case 1:
+ document.getElementById("fotocambia").src="img/1.png";
+ break;
+ case 2:
+ document.getElementById("fotocambia").src="img/2.png";
+ break;
+ case 3:
+ document.getElementById("fotocambia").src="img/3.png";
+ break;
+ case 4:
+ document.getElementById("fotocambia").src="img/4.png";
+ break;
+ }
+
+}
+function inicio() {
+setInterval(cambia, 3000);
+}
+window.onload=inicio;
+</script>
+</head>
+<body>
+
+<style type="text/css">
+	
+
+#cuerpo
+{
+	margin:auto;
+	margin-top: 60px;
+	margin-bottom: 60px;
+	width: 1200px;
+	height: 1500px;
+	border: 1px solid black;
+	border-radius: 20px 20px 0px 0px;
+	
+}
+
+#banner
+{
+	background-color: #3199AE;
+	width: 100%;
+	height: 300px;
+	border-radius: 20px 20px 20px 20px;
+	box-shadow: 5px 5px 5px 5px grey;
+
+}
+
+#arriba
+{
+	background-color: #DFD97A;
+	width: 1200px;
+	height: 500px;
+	box-shadow: 5px 5px 5px 5px grey;
+
+}
+
+#imagen
+{
+	background-color: black;
+	width: 600px;
+	height: 500px;
+	float: left;
+	
+}
+
+#video
+{
+	background-color: white;
+	width: 600px;
+	height: 500px;
+	float: left;
+}
+
+#centro
+{
+	background-color: #6A2525;
+	width: 1200px;
+	height: 200px;
+	
+
+}
+
+#abajo
+{
+	background-color: #DFD97A;
+	width: 1200px;
+	height: 500px;
+	box-shadow: 5px 5px 5px 5px grey;
+
+}
+
+#animacion
+{
+	background-color: white;
+	width: 600px;
+	height: 500px;
+	float: left;
+}
+
+#audio
+{
+	background-color: black;
+	width: 600px;
+	height: 500px;
+	float: left;
+	
+}
+
+
+
+</style>
+
+
+	<div id="cuerpo">
+
+
+
+		<div id="banner">
+		<img id="fotocambia" src="img/1.png" width="100%" height="100%">
+
+		
+		
+		</div>
+
+		<div id="arriba">
+			
+
+			<div id="imagen">
+
+			<img src="imagenF.jpg" width="600" height="500" >
+			
+			</div>
+
+			<div id="video">
+							
+				<iframe class="youtube-player" type="text/html" width="600" height="500" src="http://www.youtube.com/embed/MnqYwcuIjPM" frameborder="0" ></iframe>
+	
+		</iframe>
+			</iframe>
+			
+			</div>
+		</div>
+
+		<div id="centro">
+		
+		</div>
+
+		<div id="abajo">
+
+			<div id="animacion">
+			<img src="gifF.gif" width="600" height="500" >
+			
+			</div>
+			
+			<div id="audio">
+
+			<audio src="audio.m4a" preload="auto" style="margin-left: 25%; margin-top: 30%" controls></audio>
+			
+			</div>
+		
+		</div>
+
+
+
+	
+	</div>
+
+
+	
+
+
+</body>
+</html>
