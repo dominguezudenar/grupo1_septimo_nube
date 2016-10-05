@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type = "text/css">
+	#contenedor
+	{
+		background-color:gray;
+		width:1024px;
+		height:1150px;
+		margin:0 auto;
+	}
+	#fila1
+	{
+		background-color:violet;
+		width:100%;
+		height:200px;
+		border-radius:20px 20px 20px 20px;
+	}
+	#fila2
+	{
+		background-color:lightgray;
+		width:100%;
+		height:700px;
+	}
+	#fila3
+	{
+		background-color:gray;
+		width:100%;
+		height:100px;
+	}
+	#fila4
+	{
+		background-color:blue;
+		width:100%;
+		height:150px;
+	}
+	#columna1
+	{
+		background-color:blue;
+		width:30%;
+		height:100%;
+		float:left;
+	}
+	#columna2
+	{
+		background-color:red;
+		width:40%;
+		height:100%;
+		float:left;
+	}
+	#columna3
+	{
+		background-color:yellow;
+		width:30%;
+		height:100%;
+		float:left;
+	}
+	#filita1
+	{
+		background-color:green;
+		width:100%;
+		height:33%;
+	}
+	#filita2
+	{
+		background-color:yellow;
+		width:100%;
+		height:34%;
+	}
+	#filita3
+	{
+		background-color:pink;
+		width:100%;
+		height:33%;
+	}
+	#dfilita1
+	{
+		background-color:blue;
+		width:100%;
+		height:33%;
+	}
+	#dfilita2
+	{
+		background-color:green;
+		width:100%;
+		height:34%;
+	}
+	#dfilita3
+	{
+		background-color:orange;
+		width:100%;
+		height:33%;
+	}
+	#columnita1
+	{
+		background-color:yellow;
+		width:37%;
+		height:100%;
+		float:left;
+	}
+	#columnita2
+	{
+		background-color:lightblue;
+		width:26%;
+		height:100%;
+		float:left;
+	}
+	#columnita3
+	{
+		background-color:yellow;
+		width:37%;
+		height:100%;
+		float:left;
+	}
+	ul
+	{
+		float:left;
+	}
+	li
+	{
+		float:left;
+		margin-left:15px;
+		list-style:none;
+		padding-left:170px;
+		font-size:1.5em;
+	}
+</style>
+<body>
+<div id = "contenedor">
+	<div id = "fila1">
+	<input type = "button" value = "1" onclick = "cambiar1()">
+		<script type = "text/javascript">
+			function cambiar1()
+			{
+				document.getElementById('dfilita3').style.background='#000000';
+			}
+		</script>
+	</div>
+	<div id = "fila2">
+		<div id = "columna1">
+			<div id = "filita1">
+				<input type = "button" value = "2" onclick = "cambiar2()">
+				<script type = "text/javascript">
+				function cambiar2()
+				{
+				document.getElementById('columnita3').style.background='#000000';
+				}
+				</script>
+			</div>
+			<div id = "filita2">
+			</div>
+			<div id = "filita3">
+				<input type = "button" value = "4" onclick = "cambiar4()">
+				<script type = "text/javascript">
+				function cambiar4()
+				{
+					document.getElementById('fila1').style.background='#000000';
+				}
+				</script>
+			</div>
+		</div>
+		<div id = "columna2">
+		</div>
+		<div id = "columna3">
+			<div id = "dfilita1">
+				<input type = "button" value = "3" onclick = "cambiar3()">
+				<script type = "text/javascript">
+				function cambiar3()
+				{
+					document.getElementById('columnita1').style.background='#000000';
+				}
+				</script>
+			</div>
+			<div id = "dfilita2">
+			</div>
+			<div id = "dfilita3">
+				<input type = "button" value = "5" onclick = "cambiar5()">
+				<script type = "text/javascript">
+				function cambiar5()
+				{
+				document.getElementById('columnita2').style.background='#000000';
+				}
+				</script>
+			</div>
+		</div>
+	</div>
+	<div id = "fila3">
+		<div id = "columnita1">
+		</div>
+		<div id = "columnita2">
+		</div>
+		<div id = "columnita3">
+		</div>
+	</div>
+	<div id = "fila4">
+		<input type = "button" value = "6" onclick = "cambiar6()">
+		<script type = "text/javascript">
+			function cambiar6()
+			{
+				document.getElementById('filita1').style.background='#000000';
+			}
+		</script>
+	</div>
+</div>
+</body>
+</html>
