@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)file:///C:/Users/UIT/Desktop/Tall_30_sep_Aplic/Ejercicio1.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title>
+		
+	</title>
+<style type="text/css">
+	#contenedor
+	{
+		background-color:#04B4AE;
+		width: 1024px;
+		height: 1000px;
+		margin: 0 auto;
+		border-radius: 15px 15px 15px 15px;
+	}
+	#Fila1
+	{
+		background-color:#04B4AE;
+		width: 900px;
+		height: 300px;
+		margin: 0 auto;
+		border-radius: 15px 15px 15px 15px;
+	}
+	#Columna1
+	{
+		background-color:white;
+		width: 435px;
+		height:300px;
+		float: left;
+
+		border-radius: 15px 15px 15px 15px;
+	}
+	#Columna2
+	{
+		background-color:white;
+		width: 435px;
+		height:300px;
+		border-radius: 15px 15px 15px 15px;
+		float: right;
+	}
+	#Fila2
+	{
+		background-color:#04B4AE;
+		width: 900px;
+		height: 600px;
+		margin: 0 auto;
+		border-radius: 15px 15px 15px 15px;
+	}
+	#Columna3
+	{
+		background-color:gray;
+		width: 145px;
+		height:600px;
+		float: left;
+		margin-right: 15px;
+		border-radius: 15px 15px 15px 15px;
+	}
+	#Columna4
+	{
+		background-color:gray;
+		width: 580px;
+		height:600px;
+		float: left;
+		margin-right: 15px;
+		border-radius: 15px 15px 15px 15px;
+	}
+	#Columna5
+	{
+		background-color:gray;
+		width: 145px;
+		height:600px;
+		border-radius: 15px 15px 15px 15px;
+		float: left;
+	}
+</style></head>
+
+<body>
+<div id="contenedor">
+	<br>
+	<br>
+	<div id="Fila1">
+		<div id="Columna1">
+				<br>
+				<br>
+				<br>
+				<br>
+			    &nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<input type="button" value="Mostrar tabla" onclick="cambiar()">
+				<script type="text/javascript">
+					function cambiar()
+					{
+							var n =5;
+							var tabla ="";
+							var fil="";
+							var col=""; 
+							var contador=0;
+
+								for (var i = 10; i >=1; i--)
+								{
+					
+								n = 7;
+								var resultado = n*i; 
+								col= col +"<td>"+ n + "</td>"+"<td>"+"*"+"</td>"+"<td>"+i+"</td>"+"<td>"+"="+"</td>"+"<td>"+resultado+"</td>";
+								fil= fil+"<tr>"+col+"</tr>";
+								col="";
+								}
+							document.getElementById('tabla_mostar').innerHTML=fil; 
+					}
+				</script>
+		</div>
+		<div id="Columna2">
+			<br>
+				<table border="1" align="center">
+					<form action="file:///C:/Users/UIT/Desktop/Tall_30_sep_Aplic/Ejercicio1.html"></form>
+				
+					<body><tr>
+						<td>
+							&nbsp;&nbsp;&nbsp;&nbsp;Digite filas&nbsp;&nbsp;<input type="text" id="Filas">
+						</td>
+						</tr>
+						<tr>
+							<td>
+								&nbsp;&nbsp;&nbsp;&nbsp;Digite columnas&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="Columnas">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input type="button" value="Mostrar tabla" onclick="Calcular()">
+							</td>
+
+						</tr>
+					</body>
+				</table>
+			<script type="text/javascript">
+				function Calcular()
+				{
+					var filas = document.getElementById('Filas').value;
+					var columnas = document.getElementById('Columnas').value;
+					var Mostrar_Tabla = document.getElementById('Mostrar_Tabla');
+					var Filas_Columnas ="";
+
+					for (var i = 1; i <= filas ; i++) 
+					{
+						var Col="";
+
+						for (var j = 1; j <= columnas; j++)
+						{
+		
+							if (j % 2 == 0)
+							{
+								if(i % 3 == 0)
+								{
+									Col = Col + " <td width = '80px' height='20px'><img src='imagen.png'/></td>";
+								}
+								else
+								{
+									Col = Col + " <td width = '80px' height='20px' bgcolor='#FFFFFF'></td>";
+								}
+			    			}
+			 		   	    else
+							{				
+								if (i % 3 == 1)
+								{
+									Col = Col + " <td width = '80px' height='20px'><img src='imagen.png'/></td>";	
+								}
+								else
+								{
+									Col = Col + " <td width = '80px' height='20px' bgcolor='#FFFFFF'></td>";
+								}
+							}				
+						}
+						Filas_Columnas = Filas_Columnas + "<tr>" + Col + "</tr>";
+					}
+					 Mostrar_Tabla.innerHTML= Filas_Columnas;
+				}
+			</script>
+		</div>
+	</div>
+	&nbsp;&nbsp;&nbsp;
+	<div id="Fila2">
+		<div id="Columna3">
+		</div>
+		<div id="Columna4">	
+			<br>
+			<br>
+			<br>
+			<br>	
+		    <div id="div_mostrar">
+				<table align="center" border="1" id="tabla_mostar" bordercolor="blue">
+				</table>
+		    </div>
+
+		    <div id="Div_MostrarTabla">
+		    	<table id="Mostrar_Tabla" border="1" align="center" bordercolor="black">
+
+				</table>
+			</div>
+			
+   			
+	    </div>
+	    <div id="Columna5">
+		
+	    </div>
+	</div> 
+
+
+</div></body></html>
