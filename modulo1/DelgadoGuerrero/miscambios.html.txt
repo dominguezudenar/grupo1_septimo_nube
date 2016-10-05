@@ -2,5 +2,6 @@
 <body>
 	<h1>Prueba de conexion</h1>
 	<h1>Agregando nuevos cambios</h1>
+	<h1>Probando que salga mi foto</h1>
 </body>
 </html>
