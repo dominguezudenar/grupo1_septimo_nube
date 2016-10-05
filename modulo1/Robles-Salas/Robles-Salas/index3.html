@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+</head>
+
+<style type="text/css">
+	
+#contenedor
+{
+	background-color:transparent;
+	width:1000px;
+	height: 1415px;
+	margin: 0 auto;
+
+}
+
+#banner
+{
+	background-color:transparent;
+	width:1000px;
+	height: 200px;
+	border-radius: 40px;
+	box-shadow: 7px 7px 15px 0px;
+	overflow: hidden;
+}
+
+#espaciodivs1
+{
+	background-color: transparent;
+	width: 1000px;
+	height: 5px
+}
+
+#imagenYvideo
+{
+	background-color:green;
+	width:1000px;
+	height: 500px;
+}
+
+#espaciodivs2
+{
+	background-color: transparent;
+	width: 1000px;
+	height: 5px
+}
+
+
+#espacio
+{
+	background-color:brown;
+	width:1000px;
+	height: 200px;
+	box-shadow: 5px 5px 20px 0px;
+}
+
+#espaciodivs3
+{
+	background-color: transparent;
+	width: 1000px;
+	height: 5px
+}
+
+
+#animacionYaudio
+{
+	background-color:blue;
+	width:1000px;
+	height: 500px;
+}
+
+#imagen
+{
+	background-color:pink;
+	width:500px;
+	height: 500px;
+	float: left;
+	box-shadow: 7px 7px 15px 0px;
+}
+
+#video
+{
+	background-color:red;
+	width:500px;
+	height: 500px;
+	float: left;
+	box-shadow: 7px 7px 15px 0px;
+}
+
+#animacion
+{
+	background-color: #0F9A6A;
+	width:500px;
+	height: 500px;
+	float: left;
+	box-shadow: 7px 7px 15px 0px;
+}
+
+#audio
+{
+	background-color: #C17920;
+	width: 500px;
+	height: 500px;
+	float: left;
+	box-shadow: 7px 7px 15px 0px;
+}
+
+.slider ul
+{
+	padding: 0;
+	display: flex;
+	animation: cambio 20s infinite alternate;
+}
+
+.slider li
+{
+	list-style: none;
+	width: 1000px;
+}
+
+.slider img
+{
+	width: 1000px;
+}
+
+@keyframes cambio
+{
+	0%{margin-left: 0%;}
+	20%{margin-left: 0%;}
+
+	25%{margin-left: -100%;}
+	45%{margin-left: -100%;}
+
+	50%{margin-left: -200%;}
+	70%{margin-left: -200%;}
+
+	75%{margin-left: -300%;}
+	100%{margin-left: -300%;}
+
+}
+
+
+</style>
+
+
+	<body>
+
+		<div id="contenedor">
+
+			<div id="banner" class="slider">
+				<ul>
+					<li> <img src="futbol.png" style="border-radius: 40px;"> </li>
+					<li> <img src="basketball.png" style="border-radius: 40px;"> </li>
+					<li> <img src="ciudad.png" style="border-radius: 40px;"> </li>
+					<li> <img src="wason.png" style="border-radius: 40px;"> </li>
+				</ul>
+			</div>
+
+			<div id="espaciodivs1">
+				
+			</div>
+
+			<div id="imagenYvideo">
+
+				<div id="imagen">
+
+					<iframe width="400" height="400" 
+							src="mascara.png" 
+							style=" margin-top:50px; margin-left:50px;" 
+							allowfullscreen>			
+					</iframe>
+					
+				</div>
+
+				<div id="video">
+					<iframe width="400" height="400" 
+							src="https://www.youtube.com/embed/85MppyLJHz0?autohide=0" 
+							style=" margin-top:50px; margin-left:50px;" 
+							allowfullscreen>			
+					</iframe>
+				</div>			
+
+			</div>
+
+			<div id="espaciodivs2">
+				
+			</div>
+
+			<div id="espacio">
+				
+			</div>
+
+			<div id="espaciodivs3">
+				
+			</div>
+
+			<div id="animacionYaudio">
+
+				<div id="animacion">
+					<iframe width="400" height="400" 
+							src="cubos.gif" 
+							style=" margin-top:50px; margin-left:50px;" 
+							allowfullscreen>			
+					</iframe>
+				</div>
+
+				<div id="audio">
+					
+					<audio src="audio.mp3" 
+						   controls="" 
+					       style=" margin-top:250px; margin-left:100px">
+					</audio>			
+				</div>	
+			</div>
+		</div>
+
+	</body>
+</html>

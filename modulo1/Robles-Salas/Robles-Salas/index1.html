@@ -1,0 +1,243 @@
+<html>
+<head>
+	<title></title>
+
+</head>
+
+<style type="text/css">
+
+#contenedor
+{
+	background-color:black;
+	width:1000px;
+	height: 1000px;
+	margin: 0 auto;
+
+}
+
+#bloque1
+{
+	background-color:purple;
+	width:100%;
+	height: 200px;
+	
+}
+
+#bloque2
+{
+	background-color:black;
+	width:100%;
+	height: 600px;
+}
+
+#bloque3
+{
+	background-color:yellow;
+	width:100%;
+	height: 100px;
+}
+
+
+#bloque4
+{
+	background-color:red;
+	width:100%;
+	height: 100px;
+}
+
+#bloque2a
+{
+	background-color:blue;
+	width:20%;
+	height: 600px;
+	float: left;
+}
+
+
+#bloque2b
+{
+	background-color:blue;
+	width:20%;
+	height: 600px;
+	float: right;
+}
+
+#bloque2aa
+{
+	background-color:blue;
+	width:100%;
+	height: 200px;
+	
+}
+
+#bloque2ab
+{
+	background-color:gray;
+	width:100%;
+	height: 200px;
+	
+}
+#bloque2ac
+{
+	background-color:#04CFE5;
+	width:100%;
+	height: 200px;
+	
+}
+
+#bloque2ba
+{
+	background-color:blue;
+	width:100%;
+	height: 200px;
+	
+}
+
+#bloque2bb
+{
+	background-color:green;
+	width:100%;
+	height: 200px;
+	
+}
+#bloque2bc
+{
+	background-color:#E57104;
+	width:100%;
+	height: 200px;
+	
+}
+
+#bloque3a
+{
+	background-color:yellow;
+	width:400px;
+	height: 100px;
+	float:left;
+	
+}
+
+
+#bloque3b
+{
+	background-color:#04CFE5;
+	width:200px;
+	height: 100px;
+	float: left;
+	
+	
+	
+
+}
+
+#bloque3c
+{
+	background-color:yellow;
+	width:400px;
+	height: 100px;
+	float: left;	
+}
+
+
+
+
+
+
+
+
+</style>
+
+	<body>
+
+		<div id="contenedor">
+
+			<div id="bloque1">
+				<input type="button" value="boton1" onclick="cambiar1()">  
+					<script type="text/javascript">
+						function cambiar1()
+						{
+							document.getElementById('bloque2bc').style.background= 'purple';
+
+						}
+					</script>
+				</input>
+			</div>
+
+			<div id="bloque2">
+
+				<div id = "bloque2a">
+					<div id="bloque2aa">
+						<input type = "button" value = "boton2" ONCLICK="cambiar2()">
+							<script type="text/javascript">
+								function cambiar2()
+								{
+									document.getElementById('bloque3c').style.background= 'blue';
+
+								}
+							</script>
+						</input>
+					</div>
+					<div id="bloque2ab"></div>
+					<div id="bloque2ac">
+						<input type = "button" value = "boton4" ONCLICK="cambiar4()">
+							<script type="text/javascript">
+								function cambiar4()
+								{
+									document.getElementById('bloque1').style.background= '#04CFE5';
+
+								}
+							</script>
+						</input>
+					</div>
+				</div>
+				<div id = "bloque2b">
+					<div id="bloque2ba">
+						<input type = "button" value = "boton3" ONCLICK="cambiar3()">
+							<script type="text/javascript">
+								function cambiar3()
+								{
+									document.getElementById('bloque3a').style.background= 'blue';
+
+								}
+							</script>
+						</input>
+					</div>
+					<div id="bloque2bb"></div>
+					<div id="bloque2bc">
+						<input type="button" value="boton5" onclick="cambiar5()">  
+							<script type="text/javascript">
+								function cambiar5()
+								{
+									document.getElementById('bloque3b').style.background= '#E57104';
+
+								}
+							</script>
+						</input>
+					</div>
+				</div>
+
+			</div>
+
+			<div id="bloque3">
+					<div id="bloque3a"></div>
+					<div id="bloque3b"></div>
+					<div id="bloque3c"></div>
+			</div>
+
+			<div id="bloque4">
+				<input type="button" value="boton6" onclick="cambiar6()">  
+					<script type="text/javascript">
+					function cambiar6()
+					{
+						document.getElementById('bloque2aa').style.background= 'red';
+
+					}
+					</script>
+				</input>
+			</div>
+		</div>
+		<script type="text/javascript">
+		</script>
+	</body>
+
+</html>
