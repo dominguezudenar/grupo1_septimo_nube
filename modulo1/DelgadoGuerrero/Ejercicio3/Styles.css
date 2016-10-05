@@ -1,0 +1,57 @@
+.main {
+	width: 500px;
+	height: 600px;
+	margin: auto;
+	font-size: 30px;
+	text-align: center;
+	font-family: verdana;
+	box-shadow: 5px 5px 10px #888888;
+}
+
+.block1{
+	width: 100%;
+	height: 100px;
+	background-color:	LightGray;
+}
+
+.block2{
+	width: 100%;
+	height: 200px;
+	background-color: CornflowerBlue;
+}
+
+.left{
+	width: 250px;
+	height: 100%;
+	float: left;
+}
+
+.right{
+	width: 250px;
+	height: 100%;
+	float: right;
+}
+
+
+.block3{
+	width: 100%;
+	height: 100px;
+	background-color: yellow;
+}
+
+
+.block4{
+	width: 100%;
+	height: 200px;
+	background-color: SeaGreen;
+}
+
+.ajustar{
+	height: 100%;
+	width: 100%;
+}
+
+figure {
+	padding: 0;
+	margin: 0;
+}
