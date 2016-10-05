@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html><head>
+	<title>
+		
+	</title>
+<style type="text/css">
+#contenedor
+	{
+		background-color:cyan;
+		width: 1024px;
+		height: 1100px;
+		margin: 0 auto ; 
+		border-radius: 15px 15px 0px 0px;
+	}
+
+
+	#izquierda
+	{
+		background-color:white;
+		width: 450px;
+		height: 200px; 
+		 margin-top: 1em;
+   		 margin-bottom: .5em;
+ 		 margin-left: 1em;
+ 		 margin-right: .5em;
+		border-radius: 15px 15px 15px 15px;
+		float:left;
+	}
+	#derecha
+	{
+		background-color:white;
+		width: 450px;
+		height: 200px;
+		margin-top: 1em;
+  		margin-bottom: .5em;
+  		margin-left: 5em;
+ 		margin-right: 1em;
+		border-radius: 15px 15px 15px 15px;
+		float:left;
+	}
+	
+	#izq
+	{
+		background-color:gray;
+		width: 20%;
+		height: 850px; 
+		 margin-top: 1em;
+   		 margin-bottom: 1em;
+ 		 margin-left: 1em;
+ 		 margin-right: .3em;
+		border-radius: 15px 15px 15px 15px;
+		float:left;
+	}
+	#cen
+	{
+		background-color:gray;
+		width: 55%;
+		height: 850px; 
+		 margin-top: 1em;
+   		 margin-bottom: 1em;
+ 		 margin-left: .3em;
+ 		 margin-right: .3em;
+		border-radius: 15px 15px 15px 15px;
+		float:left;
+	}
+	#der
+	{
+		background-color:gray;
+		width: 20%;
+		height: 850px;
+		margin-top: 1em;
+  		margin-bottom: 1em;
+  		margin-left: .3em;
+ 		margin-right: 1em;
+		border-radius: 15px 15px 15px 15px;
+		float:left;
+	}
+</style></head>
+
+<body>
+<div id="contenedor">
+	<br>
+	<br>
+	<div id="menus">
+		<div id="izquierda"> </br></br></br></br></br>
+	 
+		<input type="button" value="MOSTRAR TABLA" onclick="calcular()" >
+		<script type="text/javascript">
+					function calcular()
+					{
+							var n =5;
+							var tabla ="";
+							var fil="";
+							var col=""; 
+							var contador=0;
+
+								for (var i = 1; i <=10; i++)
+								{
+					
+								n = 5;
+								var res = n*i; 
+								col= col +"<td>"+ n + "</td>"+"<td>"+"*"+"</td>"+"<td>"+i+"</td>"+"<td>"+"="+"</td>"+"<td>"+res+"</td>";
+								fil= fil+"<tr>"+col+"</tr>";
+								col="";
+								}
+							document.getElementById('mostar').innerHTML=fil; 
+					}
+				</script>
+		</div>
+		<div id="derecha">
+			<br>
+					
+				
+					<body> </br></br>
+					<center>
+					
+							Digite filas <input type="text" id="Filas"></br></br>
+					Digite columnas <input type="text" id="Columnas"></br></br>
+						
+						
+					
+	
+								<input type="button" value="Mostrar tabla" onclick="Mostrar()">
+					</center>
+							
+
+					
+					</body>
+			
+			<script type="text/javascript">
+				function Mostrar()
+				{
+					var filas = document.getElementById('Filas').value;
+					var columnas = document.getElementById('Columnas').value;
+					var Mostrar_Tabla = document.getElementById('ta');
+					var Filas_Columnas ="";
+
+					for (var i = 1; i <= filas ; i++) 
+					{
+						var Col="";
+
+						for (var j = 1; j <= columnas; j++)
+						{
+		
+							if (j % 2 == 0)
+							{
+								if(i % 3 == 0)
+								{
+									Col = Col + " <td width = '80px' height='20px'><img src='ima.gif'/></td>";
+								}
+								else
+								{
+									Col = Col + " <td width = '80px' height='20px' bgcolor='#FFFFFF'></td>";
+								}
+			    			}
+			 		   	    else
+							{				
+								if (i % 3 == 1)
+								{
+									Col = Col + " <td width = '80px' height='20px'><img src='ima.gif'/></td>";	
+								}
+								else
+								{
+									Col = Col + " <td width = '80px' height='20px' bgcolor='#FFFFFF'></td>";
+								}
+							}				
+						}
+						Filas_Columnas = Filas_Columnas + "<tr>" + Col + "</tr>";
+					}
+					 Mostrar_Tabla.innerHTML= Filas_Columnas;
+				}
+			</script>
+		 </div>
+
+
+    <div id="tabla"> 
+		<div id="izq"> 
+	
+
+        </div>
+        <div id="cen"> 
+		 <div id="div_mostrar"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+				<table align="center" border="1" id="mostrar">
+				</table>
+				
+		    </div>
+		    <div id="tab">
+		    	<table align="center" id="ta" border="1px">
+		
+			    </table>
+		    </div>
+
+		   
+		    
+
+
+        </div>
+        <div id="der"> 
+	
+
+        </div>
+
+    </div>
+
+</div>
+
+	
+
+</body>
+</html>
