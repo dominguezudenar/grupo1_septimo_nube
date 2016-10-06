@@ -1,12 +1,26 @@
 ¿Qué es Jquery?
-Es una librería de funciones y métodos más esenciales para el  desarrollo web compatibles con todos los navegadores, facilita mucho el desarrollo de aplicaciones enriquecidas del lado del cliente en JavaScript. A veces nos podemos referir a JQuery como framework o incluso como un API de funciones, útiles en la mayoría de proyectos web.
+Es una librería de funciones y métodos más esenciales para el  desarrollo web compatibles con todos los navegadores, 
+facilita mucho el desarrollo de aplicaciones enriquecidas del lado del cliente en JavaScript. 
+A veces nos podemos referir a JQuery como framework o incluso como un API de funciones, útiles en la mayoría de proyectos web.
+
 ¿Para qué sirve Jquery?
-La propia librería hará el trabajo por nosotros y ejecutará el código que sea compatible con el software del cliente que está accediendo a nuestra web. Proporciona funcionalidades que además se extiende por medio de miles de plugins que ofrece la comunidad para implementar cualquier tipo de comportamiento.
+La propia librería hará el trabajo por nosotros y ejecutará el código que sea compatible con el software del cliente que 
+está accediendo a nuestra web. Proporciona funcionalidades que además se extiende por medio de miles de plugins que ofrece la
+comunidad para implementar cualquier tipo de comportamiento.
+
 ¿Qué es Ajax?
-Una tecnología que busca evitar las demoras propias de las peticiones y respuestas del servidor mediante la transmisión de datos en segundo plano (asíncronos) usando un protocolo específicamente diseñado para la transmisión rápida de pequeños paquetes de datos, creando efectos dinámicos y rápido sin necesidad de recargar la página.
+Una tecnología que busca evitar las demoras propias de las peticiones y respuestas del servidor mediante la transmisión de datos
+en segundo plano (asíncronos) usando un protocolo específicamente diseñado para la transmisión rápida de pequeños paquetes 
+de datos, creando efectos dinámicos y rápido sin necesidad de recargar la página.
+
 ¿Para qué sirve Ajax?
- Permiten intercambiar datos con un servidor y actualizar partes de páginas web sin necesidad de recargar la página completamente” simplemente actualiza una porción de nuestra página web, por ejemplo “maps.google.com” sin la habilidad AJAX no se podrían dibujar mapas o crear aplicaciones que parezcan como si estuviesen corriendo localmente 
+ Permiten intercambiar datos con un servidor y actualizar partes de páginas web sin necesidad de recargar la página completamente
+ simplemente actualiza una porción de nuestra página web, por ejemplo “maps.google.com” sin la habilidad AJAX no se podrían 
+ dibujar mapas o crear aplicaciones que parezcan como si estuviesen corriendo localmente.
+ 
 ¿Qué es Bootstrap?
-Es un framework de css, un conjunto de archivos CSS que se incluyen en la página que se esté desarrollando para maquetarlo, sin tocar una sola línea de CSS, es compatible con la mayoría de los navegadores web.
+Es un framework de css, un conjunto de archivos CSS que se incluyen en la página que se esté desarrollando para maquetarlo, 
+sin tocar una sola línea de CSS, es compatible con la mayoría de los navegadores web.
+
 ¿Para qué sirve Bootstrap?
-Permite crear interfaces web con CSS y JS y adaptarlas al tamaño del dispositivo en que se visualice
+Permite crear interfaces web con CSS y JS y adaptarlas al tamaño del dispositivo en que se visualice.
