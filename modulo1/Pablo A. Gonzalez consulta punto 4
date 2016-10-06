@@ -1,0 +1,52 @@
+jQuery ?
+es una biblioteca de JavaScript, creada inicialmente por John Resig, que permite simplificar la manera
+de interactuar con los documentos HTML, manipular el árbol DOM, 
+manejar eventos, desarrollar animaciones y agregar interacción con la técnica AJAX a páginas web.
+
+para que sirve jQuery?
+jQuery nos permite agregar efectos y funcionalidades complejas a nuestro sitio web, como por ejemplo:
+galerías de fotos dinámicas y elegantes, validación de formularios, calendarios, hacer aparecer y desaparecer 
+elementos en nuestra página y muchas otras poderosas opciones. Otra ventaja sin duda es 
+la posibilidad que nos brinda de trabajar con AJAX, sin preocuparnos de los detalles complejos de la programación.
+
+	¿Qué es Ajax?
+  AJAX es el acrónimo de Asynchronous Javascript and XML, es decir, Javascript y XML Asíncrono. 
+  Éste término, se presento por primera vez en el artículo “Ajax: A New Approach to Web Appllications” publicado por Jesse James Garret el 18 de Febrero de 2005.
+
+Para entender esta técnica, vamos a ver las tecnologías que la componen:
+
+    Javascript: Lenguaje de programación interpretado por los navegadores modernos.
+    XML: Lenguaje de marcas utilizado para almacenar datos en forma legible. 
+    Se propone como un estándar para el intercambio de información estructurada entre diferentes plataformas.
+    Asíncrono: Tipo de comunicación entre procesos en que quien envía el mensaje 
+    continúa con su ejecución sin esperar respuesta del receptor. El tipo de comunicación
+    opuesto es la comunicación síncrona (Quien envía permanece bloqueado esperando a que llegue una
+    respuesta del receptor antes de realizar cualquier otro ejercicio).
+
+Conclusión: AJAX és una técnica que permite la comunicación asíncrona entre un servidor y un navegador en formato XML 
+mediante programas escritos en Javascript.
+
+	¿Qué es Bootstrap?
+  Bootstrap fué creado y desarrollado por desarrolladores de twitter para unificar
+  sus criterios de trabajo internos, el resultado fue tan bueno que decidieron compartirlo 
+  bajo licencia Open Source, la acogida del proyecto fue tan buena que al final la comunidad de
+  bootstrap en Git Hub es de las mas numerosas.  Por ello verás que en muchas partes se refieren a boostrap como
+  twitter bootstrap. 
+  Lo que llama a engaño ya que no tiene nada que ver respecto a funcionalidad con Twitter.
+  
+  
+¿Para qué sirve Bootstrap?
+ootstrap a la hora de crear interfaces web, los diseños creados con Bootstrap son simples, limpios e intuitivos, 
+esto les da agilidad a la hora de cargar y al adaptarse a otros dispositivos. El Framework trae varios elementos
+con estilos predefinidos fáciles de configurar: Botones, Menús desplegables, Formularios incluyendo todos sus 
+elementos e integración jQuery para ofrecer ventanas y tooltips dinámicos.
+
+Bootstrap tiene un soporte relativamente incompleto para HTML5 y CSS 3, pero es compatible con la mayoría
+de los navegadores web. La información básica de compatibilidad de sitios web o aplicaciones esta disponible
+para todos los dispositivos y navegadores. Existe un concepto de compatibilidad parcial que hace disponible la
+información básica de un sitio web para todos los dispositivos y navegadores. Por ejemplo, las propiedades 
+introducidas en CSS3 para las esquinas redondeadas, gradientes y sombras son usadas por Bootstrap a pesar de la falta
+de soporte de navegadores antiguos. 
+Esto extiende la funcionalidad de la herramienta, pero no es requerida para su uso.
+  
+  
