@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/estilo.css">
+	<link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="estilo2.css">
+</head>
+<body>
+
+
+	<div class="main">
+		<div class="slides">
+			<img src="fotos/1.jpg" alt="">
+			<img src="fotos/2.jpg" alt="">
+			<img src="fotos/3.jpg" alt="">
+			<img src="fotos/4.jpg" alt="">
+			<img src="fotos/5.jpg" alt="">
+		</div>
+	</div>
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="js/jquery.slides.js"></script>
+	
+
+    	<script>
+ 
+	$(function(){
+  $(".slides").slidesjs({
+    play: {
+      active: true,
+        // [boolean] Generate the play and stop buttons.
+        // You cannot use your own buttons. Sorry.
+      effect: "slide",
+        // [string] Can be either "slide" or "fade".
+      interval: 5000,
+        // [number] Time spent on each slide in milliseconds.
+      auto: false,
+        // [boolean] Start playing the slideshow on load.
+      swap: true,
+        // [boolean] show/hide stop and play buttons
+      pauseOnHover: false,
+        // [boolean] pause a playing slideshow on hover
+      restartDelay: 2500
+        // [number] restart delay on inactive slideshow
+    }
+  });
+});
+ 
+	</script>
+
+  <div class="archivos">
+    <div class="aarriba">
+      <div class="imagen">
+       <br><br><br><br><br> <img src="fotos/3.jpg" width="50%">
+      </div>
+      <div class="video">
+        <video src="fotos/gp.mp4"  width="100%" height="100%" controls="controls">
+      </div>
+    </div>
+    <div class="aabajo">
+      <div class="animacion">
+        <img src="fotos/gif.gif" width="100%" height="100%">
+      </div>
+      <div class="musica">
+        <h1>AQUI PUEDE REPRODUCIR UN SONIDO</h1> <br><br>
+
+        <audio src="fotos/trance   weekend has come.mp3" controls loop></audio> </div>
+    </div>
+    
+    
+  </div>
+</body>
+</html>

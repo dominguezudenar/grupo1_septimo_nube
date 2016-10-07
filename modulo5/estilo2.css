@@ -1,0 +1,369 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor1
+{
+    margin: auto;
+    width: 400px;
+    height: 400px;
+    background: blue;
+    border: 3px solid;
+    text-align: center;
+    
+}
+.fila1
+{
+    width: 100%;
+    height: 100px;
+    background: red;
+}
+#fila1a
+{
+    width: 25%;
+    height: 100%;
+    float: left;
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+#fila1b
+{
+    width: 25%;
+    height: 100%;
+    float: left;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    
+}
+#fila1c
+{
+    width: 25%;
+    height: 100%;
+    float: left;
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    
+}
+#fila1d
+{
+    width: 25%;
+    height: 100%;
+    float: left;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    
+}
+.fila2
+{
+    width: 100%;
+    height: 100px;
+    background: blue;
+    
+}
+#fila2a
+{
+    width: 25%;
+    height: 100%;
+    float: left;
+    background:#f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+#fila2b
+{
+    width: 25%;
+    height: 100%;
+    float: left;
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+#fila2c
+{
+    width: 25%;
+    height: 100%;
+    float: left;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+#fila2d
+{
+    width: 25%;
+    height: 100%;
+    float: left;
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+.fila3
+{
+    width: 100%;
+    height: 100px;
+    background: red;
+}
+
+#fila3a
+{
+    width: 25%;
+    height: 100%;
+    float: left;
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+#fila3b
+{
+    width: 25%;
+    height: 100%;
+    float: left;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+#fila3c
+{
+    width: 25%;
+    height: 100%;
+    float: left;
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+#fila3d
+{
+    width: 25%;
+    height: 100%;
+    float: left;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+.fila4
+{
+    width: 100%;
+    height: 100px;
+    background: blue;
+}
+
+#fila4a
+{
+    width: 25%;
+    height: 100%;
+    float: left;
+    background:#f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+#fila4b
+{
+    width: 25%;
+    height: 100%;
+    float: left;
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+#fila4c
+{
+    width: 25%;
+    height: 100%;
+    float: left;
+    background: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+#fila4d
+{
+    width: 25%;
+    height: 100%;
+    float: left;
+    background: green;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+}
+.contenedor
+{
+    width: 100%;
+    height: 1000px;
+
+}
+
+.arriba
+{
+    width: 100%;
+    height: 10%;
+    background-color: blue;
+}
+.a
+{
+    width: 50%;
+    height: 100%;
+    background-color: #30D1F4;
+    float: left;
+    text-align: center;
+}
+.imput
+{
+    width: 50px;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+#btn_mostrar
+{
+    width: 100px;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+
+}
+.b
+{
+    width: 50%;
+    height: 100%;
+    background-color: #5078EA;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.b input
+{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+}
+.abajo
+{
+    width: 100%;
+    height: 80%;
+    text-align: center;
+    
+}
+.domino
+{
+    padding: 5px;
+}
+.titulo
+{
+    width: 40%;
+    margin: auto;
+     margin-top: 20px;
+    text-align: center;
+}
+.titulo a 
+{
+    text-decoration: none;
+
+    font-size: 30px;
+    font-family: impact;
+    color: #000;
+
+
+}
+
+/*EJERCICIO 3*/
+.archivos
+{
+    width: 90%;
+    height: 1000px;
+    
+    margin: auto;
+}
+.aarriba
+{
+    width: 100%;
+    height: 50%;
+    border: 2px solid;
+}
+.imagen
+{
+    width: 50%;
+    height:100%;
+   background-color:#E1DFDF;
+    float: left;
+    text-align: center;
+   
+
+}
+.video
+{
+    width: 50%;
+    height:100%;
+   
+    float: left;
+
+}
+.aabajo
+{
+    width: 100%;
+    height: 50%;
+    border: 2px solid;
+}
+.musica
+{
+    width: 50%;
+    height:100%;
+   
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+
+}
+.animacion
+{
+    width: 50%;
+    height:100%;
+    
+    float: left;
+
+}
+@media screen and (min-width: 1000px){
+    .archivos
+    {
+        width: 1000px;
+    }
+}
