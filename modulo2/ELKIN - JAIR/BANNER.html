@@ -1,0 +1,59 @@
+<html>
+<head>
+</head>
+<body>
+<div id="contenedor">
+<ul id="galeria">
+<li><img src="1.png" border="0" alt="1" /></li>
+<li><img src="3.png" border="0" alt="3" /></li>
+<li><img src="4.png" border="0" alt="4" /></li>
+<li><img src="3.png" border="0" alt="3" /></li>
+</ul>
+</div>
+</body>
+
+<style type="text/css">
+	#contenedor
+	{
+		width:350px;
+		height:350px;
+		margin: 0 auto;
+	}
+
+	#galeria
+	{
+		display: block; padding: 0; position: relative; width: 300px;height: 300px; list-style: none; border: 2px solid #333333; box-shadow: 0 0 10px #000; overflow: hidden;
+	}
+	#galeria li{position: absolute; top: 0; left: 0; width: 100%; background-color:#1a1a1a ;paddiing: .4em;}
+	#galeria li img{width: 100%;background: #333333;}
+	#galeria .selected
+	{
+		z-index: 1; opacity: 1; -moz-transition: all 2s ease 0s;-ms-transition: all 2s ease 0s;-o-transition: all 2s ease 0s;-webkit-transition: all 2s ease 0s;transition: all 2s ease 0s;
+	}
+	#galeria .noselected{z-index: 0; opacity: 0; -moz-transition: all 2s ease 0s;-ms-transition: all 2s ease 0s;-o-transition: all 2s ease 0s;-webkit-transition: all 2s ease 0s;transition: all 2s ease 0s;}
+</style>
+
+<script type="text/javascript">
+	var cons = 1;
+	function slide_show()
+	{
+		var elemento = document.getElementById('galeria').getElementsByTagName('li');	
+		for(var n=cons; n <= elemento.length; n++)
+		{		
+			elemento[n].className = 'selected';
+			for(var i = 0; i<elemento.length; i++)
+			{
+				if(i!=cons) elemento[i].className = 'noselected';
+		 	}
+		  	cons++;							
+		  	break;
+		 }	
+		if(cons >= elemento.length)	cons = 0;
+	 	return false;
+	}
+	window.onload = function()
+	{
+		setInterval(slide_show, 2500);
+	}
+</script>
+</html>
