@@ -1,0 +1,94 @@
+<html>
+<head>
+</head>
+<body>
+<center>
+<div id="contenedor">
+	<form><br><br>
+	<button type="button" onClick="calcular()">Mostrar tablas de multiplicar</button>
+	<button type="button" onClick="dibujar()">Mostrar Domino</button>
+	</form>
+</div>
+<div id="div3">
+	<div id="div2"></div>
+</div>
+<script>
+	function calcular()
+	{
+		var respuesta="<br><table width='80%' border='1px'>";
+		var k=3;
+		while(k<=5)
+		{
+			var i=1;
+			while(i<=10)
+			{
+				if(i==1) respuesta+="<tr><td colspan='5'>Inicio de la tabla del "+k+".</td></tr>";
+				if(i==5) respuesta+="<tr><td colspan='5'>Mitad de la tabla del "+k+".</td></tr>";
+				respuesta+="<tr>";
+				respuesta+="<td>"+k+"</td><td> * </td><td>"+i+"</td><td> = </td><td>"+(k*i)+"</td>";
+				respuesta+="</tr>";
+				if(i==10) respuesta+="<tr><td colspan='5'>Fin de la tabla del "+k+".</td></tr>";
+				i++;
+			}
+			k++;
+		}
+		respuesta+="</table>";
+		document.getElementById('div2').innerHTML=respuesta;
+	}
+	function dibujar()
+	{
+		var col=4
+		var fil=5
+		var bandera=1;
+		var respuesta="<br><table width='80%' border='1px'>";
+		for(var i=1;i<=fil;i++)
+		{
+			respuesta+="<tr>";
+			for(var j=1;j<=col;j++)
+			{
+				if(bandera==1) 
+				{
+					respuesta+="<td bgcolor='#333333'><img src='3.png' border='0' alt='3' width=100%/></td>";
+					bandera=0;
+				}
+				else
+				{ 
+					respuesta+="<td bgcolor='#dddddd'<br></td>";
+					bandera=1;
+				}
+			}
+			respuesta+="</tr>";
+			if((col%2)==0) 
+				{
+					if(bandera==0)bandera=1;
+					else bandera=0;
+				}
+		}
+		respuesta+="</table>";
+		document.getElementById('div2').innerHTML=respuesta;
+	}	
+</script>
+</center>
+</body>
+<style type="text/css">
+	#contenedor
+	{
+		background-color:#cccccc;
+		width:100%; height:100px;
+		margin: 0 auto;
+	}
+	#div2
+	{
+		background-color:#dddddd; 
+		width:70%; height:1050px;" 
+		float:left;
+	}
+	#div3
+	{
+		background-color:#333333; 
+		width:100%; height:1050px;" 
+		float:left;
+		margin:0 auto;
+	}
+</style>
+</html>
