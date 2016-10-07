@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>-</title>
+	<link rel="stylesheet" href="estilo2.css">
+</head>
+<body>
+<div class="contenedor">
+        <div class="banner">
+       		<div class="bannera" align="center">
+          	   	<form action=""> <br>
+					Digite numero de filas:<input type="text" id="filas" ><br><br>
+					Digite numero de columnas:<input type="text" id="columnas"><br><br>
+					<input type="button" value="GENERAR DOMINO" onclick="mostrar()"><br><br>
+				</form>
+          	</div>
+           	
+			<div class="bannerb" align="center">
+	    		<form action=""> <br>
+					Digite numero de tabla inicial:<input type="text" id="ini"><br><br>
+					Digite numero de tabla final:<input type="text" id="fin"><br><br> 
+					<input type="button" value="GENERAR TABLAS" onclick="calcular()"><br><br>
+					<table style:color"#fff" border="2px" align="center">
+				</table>
+				</form>
+			</div>
+		</div>
+
+		<div class="derecha"></div>
+					
+		<div class="bloque" align="center">
+			<br><br>
+    		<div id="log" align="center"><br><br></div>
+
+    			<table border="1" id="tabla" >
+
+    			</table>
+		    </div>
+	
+    	</div>
+		<script>
+		function mostrar()
+		{
+        	document.getElementById('log').innerHTML="";
+			var filas=document.getElementById('filas').value;	
+			var columnas=document.getElementById('columnas').value;
+			var filas1="";
+			var columnas1="";
+			
+			for (i=0; i<filas; i++)
+			{
+				for (j=0; j<columnas; j++)
+				{
+					if(j%2==0)
+					{
+							if(i%3==0)
+							{
+								columnas1=columnas1+"<td width='50px' height='50px'> <img src='bart.jpg' width='50px' height='50px'></td>"		
+							}
+							else
+							{
+								columnas1+="<td width='50px' height='50px'></td>"			
+							}
+					}
+					else
+					{
+					 	if (i%3==1)
+					 	{
+					 		columnas1+="<td width='50px' height='50px'> <img src='bart.jpg' width='50px' height='50px'></td>"		
+					 	}
+						else
+						{
+							columnas1+="<td width='50px' height='50px'></td>"			
+						}
+					}
+				}
+			filas1+="<tr>"+columnas1+"</tr>";
+			columnas1="";
+			}
+			document.getElementById('tabla').innerHTML=filas1;
+		}
+		</script>
+	
+    </div>
+    
+    <div class="centrob">
+           <table id="tabla" border="1px">
+            
+    		</table>    
+    </div>
+    
+    
+	<script>
+	function calcular()
+	{
+        document.getElementById("log").innerHTML="";
+        document.getElementById("tabla").innerHTML="";
+
+		var resultado ="";
+		var col ="";
+		var fil ="";
+		var ini=document.getElementById('ini').value;
+		var fin=document.getElementById('fin').value;
+		var contador1=0;
+		if(parseFloat(ini)<=parseFloat(fin))
+		{
+			while(parseFloat(ini)<=parseFloat(fin))
+			{
+				for (var i = 1; i<=10; i++)
+				{
+					resultado = ini*i;
+					col= col +"<td>"+ ini +"</td>"+"<td>*</td>"+"<td>"+i+"</td>"+"<td>"+ "  =  " + "</td>"+"<td>"+resultado+"</td>";
+					fil= fil+"<tr>"+col+"</tr>";
+					col="";
+				}
+				ini=parseFloat(ini)+1;
+				document.getElementById('tabla').innerHTML=fil;
+			}
+		}
+	}		
+	</script>
+</body>
+</html>

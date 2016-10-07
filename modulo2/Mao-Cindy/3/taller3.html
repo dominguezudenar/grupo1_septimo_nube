@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ejercicio</title>
+</head>
+
+<style type="text/css">
+	#contenedor
+	{
+		background-color: gray;
+		width: 1024px;
+		height: 1000px;
+		margin: auto;
+		border-radius: 15px 15px 0px 0px;
+	}
+
+	#banner
+	{
+		background-color: LightSteelBlue;
+		width: 1003px;
+		height: 400px;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 15px;
+		margin-bottom:15px;
+		border-radius: 15px 15px 0px 0px;
+		/*float: left;*/
+	}
+
+	#imagen
+	{
+		background-color: DodgerBlue;
+		width: 50%;
+		height: 300px;
+		border-radius: 15px 15px 15px 15px;
+		float: left;
+	}
+
+	#video
+	{
+		background-color: LightSkyBlue;
+		width: 50%;
+		height: 300px;
+		float: left;
+		border-radius: 15px 15px 15px 15px;
+	}
+
+	
+	#gif
+	{
+		background-color: PowderBlue;
+		width: 50%;
+		height: 300px;
+		float: left;
+		border-radius: 15px 15px 15px 15px;
+	}
+	#audio
+	{
+		background-color: blue;
+		width: 50%;
+		height: 300px;
+		float: left;
+		border-radius: 15px 15px 15px 15px;
+	}
+</style>
+
+
+<body>
+
+<div id="contenedor">
+
+	<div id="banner">
+
+			<img class="Slides" src="slide/bienvenidos.png">
+			<img class="Slides" src="slide/simp1.jpg">
+			<img class="Slides" src="slide/simp2.jpg">
+			<img class="Slides" src="slide/simp3.jpg">
+	
+	</div>
+
+	<script>
+		var slideIndex = 0;
+		slide();
+		function slide()
+		{
+		    var i;
+    		var x = document.getElementsByClassName("Slides");
+    		for (i = 0; i < x.length; i++)
+    		{
+      			x[i].style.display = "none"; 
+    		}
+    		slideIndex++;
+    		if (slideIndex > x.length) {slideIndex = 1} 
+    		x[slideIndex-1].style.display = "block"; 
+		    setTimeout(slide, 5000);
+		}
+	</script>
+
+	<div id="imagen">
+			<IMG src="homero.jpg" width='508px' HEIGHT='296px' BORDER="2" ALT="Homero Simpson">
+	</div>	
+	
+	<div id="video">
+			<video width="508" height="296" controls>
+  					<source src="video.mp4" type="video/mp4">
+  			</video>
+			
+	</div>
+
+	<div id="gif">
+			<img src="rafa.gif" alt="Coleco" width="508" height="296">
+	</div>
+
+	<div id="audio">
+			<audio controls>
+  					<source src="frases.mp3" type="audio/mpeg">
+			</audio>
+	</div>
+	
+</div>
+
+
+
+</body>
+</html>

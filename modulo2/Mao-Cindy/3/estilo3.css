@@ -1,0 +1,59 @@
+<style type="text/css">
+	#contenedor
+	{
+		background-color: gray;
+		width: 1024px;
+		height: 1000px;
+		margin: auto;
+		border-radius: 15px 15px 0px 0px;
+	}
+
+	#banner
+	{
+		background-color: LightSteelBlue;
+		width: 1003px;
+		height: 400px;
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-top: 15px;
+		margin-bottom:15px;
+		border-radius: 15px 15px 0px 0px;
+		/*float: left;*/
+	}
+
+	#imagen
+	{
+		background-color: DodgerBlue;
+		width: 50%;
+		height: 300px;
+		border-radius: 15px 15px 15px 15px;
+		float: left;
+	}
+
+	#video
+	{
+		background-color: LightSkyBlue;
+		width: 50%;
+		height: 300px;
+		float: left;
+		border-radius: 15px 15px 15px 15px;
+	}
+
+	
+	#gif
+	{
+		background-color: PowderBlue;
+		width: 50%;
+		height: 300px;
+		float: left;
+		border-radius: 15px 15px 15px 15px;
+	}
+	#audio
+	{
+		background-color: blue;
+		width: 50%;
+		height: 300px;
+		float: left;
+		border-radius: 15px 15px 15px 15px;
+	}
+</style>

@@ -1,0 +1,70 @@
+	#contenedor
+	{
+		background-color: yellow	;
+		width: 600px;
+		height: 600px;
+		margin: auto;
+		border-radius: 15px 15px 15px 15px;
+	}
+	.boton
+	{
+        padding: auto;
+        font-size:10px;
+        font-family:Verdana,Helvetica;
+        font-weight:bold;
+        color:white;
+        background:#638cb5;
+        border:0px;
+        width:120px;
+        height:25px;
+        margin: 20% 0px 0px 3%;
+        
+    }
+	#linea1, #linea2, #linea3, #linea4
+	{
+		background-color: yellow;
+		width: 600px;
+		height: 150px;
+		margin: auto;
+		border-radius: 15px 15px 15px 15px;	
+	}
+	
+	#b1, #b3, #b9, #b11
+	{
+		position: relative;
+		background-color: red;
+		width: 150px;
+		height: 150px;
+		margin: auto;
+		float:left;
+		border-radius: 15px 15px 15px 15px;	
+	}
+	#b2, #b4, #b10, #b12
+	{
+		background-color: blue;
+		width: 150px;
+		height: 150px;
+		margin: auto;
+		float:left;
+		border-radius: 15px 15px 15px 15px;	
+	}
+	#b5, #b7, #b13, #b15
+	{
+		background-color: gray;
+		width: 25%;
+		height: 100%;
+		margin: auto;
+		float:left;
+		border-radius: 15px 15px 15px 15px;	
+	}
+	#b6, #b8, #b14, #b16
+	{
+		background-color: green;
+		width: 25%;
+		height: 100%;
+		margin: auto;
+		float:left;
+		border-radius: 15px 15px 15px 15px;	
+	}
+	
+	
