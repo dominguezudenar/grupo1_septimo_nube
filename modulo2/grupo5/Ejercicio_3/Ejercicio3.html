@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Slider</title>
+	<link rel="stylesheet" type="text/css" href="estilos.css">
+</head>
+
+<body>
+	<div id="contenedor" >
+
+		<div id="banner" class="slider">
+			<ul>
+				<li><img src="img/1.jpg" alt=""></li>
+				<li><img src="img/2.jpg" alt=""></li>
+				<li><img src="img/3.jpg" alt=""></li>
+				<li><img src="img/5.jpg" alt=""></li>
+			</ul>		
+		</div>
+
+		<div id="bloque_central">
+				<div id="central_arriba">
+					<video width="50%" height="250px" controls>
+  							<source src="xx.mp4" type="video/mp4">
+					</video>
+					<div id="arriba_izquierda">	
+						<img src="RealMadrid.jpg" width="100%" height="250px">	
+					</div>		
+				</div>
+				
+				<div id="central_abajo">
+					<audio controls>
+  						<source src="intros.mp3" type="audio/mpeg">
+					</audio>
+					<div id="abajo_izquierda">
+						<object type="application/x-shockwave-flash" 
+								width="100%" height="250" data="Tierra_Luna.swf">
+								<param name="movie" value="../flash/horoscopo.swf">
+						</object>
+					</div>	
+				</div>				
+		</div>
+		
+	</div> <!-- Cierre div CONTENEDOR -->
+
+	<script>
+		var myVideo = document.getElementById("video1");
+
+			function playPause()
+			{
+			if (myVideo.paused)
+				 myVideo.play();
+			else
+			    myVideo.pause();
+			}
+
+	</script>
+
+
+</body>
+
+</html>
