@@ -1,0 +1,124 @@
+<html>
+<head>
+</head>
+<style type="text/css">
+	#contenedor
+	{
+		background-color:#333333;
+		width:800px;	height:400px;
+		border-radius:15px;
+		box-shadow:15px 15px 10px #777777;
+		margin: 0 auto; 
+	}
+	#bloque_1,#bloque_3,#bloque_6,#bloque_8,#bloque_9,#bloque_11,#bloque_14,#bloque_16
+	{
+		background-color:#333333;
+		width:25%;	height:100px;
+		float:left;
+	}
+	#bloque_2,#bloque_4,#bloque_5,#bloque_7,#bloque_10,#bloque_12,#bloque_13,#bloque_15
+
+	{
+		background-color:lightblue;
+		width:25%;	height:100px;
+		float:left;
+	}
+</style>
+<body>
+	<div id="contenedor">
+		<div id="bloque_1">
+			<center><br><br><form>
+			<input id="1" type="button" value="1" onClick="cambiar(1);">
+			</center>
+		</div>		
+		<div id="bloque_2">
+			<center><br><br><form>
+			<input id="2" type="button" value="2" onClick="cambiar(2);">
+			</center>
+		</div>
+		<div id="bloque_3">
+			<center><br><br><form>
+			<input id="3" type="button" value="3" onClick="cambiar(3);">
+			</center>
+		</div>
+		<div id="bloque_4">
+			<center><br><br><form>
+			<input id="4" type="button" value="4" onClick="cambiar(4);">
+			</center>
+		</div>
+		<div id="bloque_5">
+			<center><br><br><form>
+			<input id="5" type="button" value="4" onClick="cambiar(4);">
+			</center>
+		</div>
+		<div id="bloque_6">
+			<center><br><br><form>
+			<input id="6" type="button" value="5" onClick="cambiar(5);">
+			</center>
+		</div>
+		<div id="bloque_7">
+			<center><br><br><form>
+			<input id="7" type="button" value="6" onClick="cambiar(6);">
+			</center>
+		</div>
+		<div id="bloque_8">
+			<center><br><br><form>
+			<input id="8" type="button" value="7" onClick="cambiar(7);">
+			</center>
+		</div>
+		<div id="bloque_9">
+			<center><br><br><form>
+			<input id="9" type="button" value="8" onClick="cambiar(8);">
+			</center>
+		</div>		
+		<div id="bloque_10">
+			<center><br><br><form>
+			<input id="10" type="button" value="9" onClick="cambiar(9);">
+			</center>
+		</div>
+		<div id="bloque_11">
+			<center><br><br><form>
+			<input id="11" type="button" value="10" onClick="cambiar(10);">
+			</center>
+		</div>
+		<div id="bloque_12">
+			<center><br><br><form>
+			<input id="12" type="button" value="11" onClick="cambiar(11);">
+			</center>
+		</div>
+		<div id="bloque_13">
+			<center><br><br><form>
+			<input id="13" type="button" value="12" onClick="cambiar(12);">
+			</center>
+		</div>
+		<div id="bloque_14">
+			<center><br><br><form>
+			<input id="14" type="button" value="13" onClick="cambiar(13);">
+			</center>
+		</div>
+		<div id="bloque_15">
+			<center><br><br><form>
+			<input id="15" type="button" value="14" onClick="cambiar(14);">
+			</center>
+		</div>
+		<div id="bloque_16">
+			<center><br><br><form>
+			<input id="16" type="button" value="15" onClick="cambiar(15);">
+			</center>
+		</div>
+	</div>
+</body>
+
+<script type="text/javascript">
+function cambiar(v)
+{
+	if (v=="1")	document.getElementById("bloque_6").style.background="#00cada";
+	else if (v=="5") document.getElementById("bloque_11").style.background="#00cada";
+	else if (v=="10") document.getElementById("bloque_16").style.background="#00cada";
+	else if (v=="15") document.getElementById("bloque_1").style.background="#00cada";
+	else if (v=="4") document.getElementById("bloque_13").style.background="#00cada";
+	else if (v=="6") document.getElementById("bloque_4").style.background="#00cada";
+	else if (v=="9") document.getElementById("bloque_7").style.background="#00cada";
+	else if (v=="12") document.getElementById("bloque_10").style.background="#00cada";
+}
+</script>
