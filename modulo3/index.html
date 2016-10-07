@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>2</title>
+	<link rel="stylesheet" href="estilo2.css">
+</head>
+
+<!-- EJERCICIO 1 -->
+
+<body>
+	<div class="titulo">
+		<a href="">EJERCICIO 1</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="">EJERCICIO 2</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a href="3.html">EJERCICIO 3</a>
+	</div>
+<br><br>
+	<div class="contenedor1">
+	
+	<div class="fila1">
+	<div id="fila1a">1
+    	<form action="">
+       		<input type="button" value="CAMBIAR" onclick="color5()">
+     	</form>
+    </div>
+	<div id="fila1b">2</div>
+	<div id="fila1c">3</div>
+	<div id="fila1d">4
+		<form action="">
+       		<input type="button" value="CAMBIAR" onclick="colornada()">
+     	</form>
+	</div>
+		
+	</div>
+	
+	<div class="fila2">
+	<div id="fila2a">4</div>
+	<div id="fila2b">5
+		<form action="">
+       		<input type="button" value="CAMBIAR" onclick="color10()">
+     	</form>
+	</div>
+	<div id="fila2c">6
+		<form action="">
+       		<input type="button" value="CAMBIAR" onclick="color4()">
+     	</form>
+	</div>
+	<div id="fila2d">7</div>
+		
+	</div>
+	
+	<div class="fila3">
+	<div id="fila3a">8</div>
+	<div id="fila3b">9
+		<form action="">
+       		<input type="button" value="CAMBIAR" onclick="color6()">
+     	</form>
+	</div>
+	<div id="fila3c">10
+		<form action="">
+       		<input type="button" value="CAMBIAR" onclick="color15()">
+     	</form>
+	</div>
+	<div id="fila3d">11</div>
+		
+	</div>
+	
+	<div class="fila4">
+	<div id="fila4a">12
+		<form action="">
+       		<input type="button" value="CAMBIAR" onclick="color9()">
+     	</form>
+	</div>
+	<div id="fila4b">13</div>
+	<div id="fila4c">14</div>
+	<div id="fila4d">15
+		<form action="">
+       		<input type="button" value="CAMBIAR" onclick="colornada()">
+     	</form>
+	</div>
+		
+	</div>
+	
+		
+	</div>
+	
+	
+	<script>
+       function color5()
+       { document.getElementById('fila2b').style.backgroundColor='#000';
+           
+       }
+		function color10()
+       { document.getElementById('fila3c').style.backgroundColor='#000';
+           
+       }
+		function color15()
+       { document.getElementById('fila4d').style.backgroundColor='#000';
+           
+       }
+		function color9()
+       { document.getElementById('fila3b').style.backgroundColor='#000';
+           
+       }
+		function color6()
+       { document.getElementById('fila2c').style.backgroundColor='#000';
+           
+       }
+		function color4()
+       { document.getElementById('fila1d').style.backgroundColor='#000';
+           
+       }
+       
+       
+    
+    
+    </script>
+<br><br><hr><br><br>
+
+<!-- EJERCICIO 2 -->
+
+	<div class="contenedor">
+		<div class="arriba">
+			<div class="a">
+				<form action=""><br>
+					filas
+					<input class="imput" type="text" id="filas" value="8">
+					columnas
+					<input class="imput" type="text" id="columnas" value="8">
+					
+					<input id="btn_mostrar" type="button"  value="mostrar" onclick="mostrar()">
+				</form>
+			</div>
+			<div class="b">
+				<form action=""><br>
+					<input type="button" value="mostrar tablas" onclick="calcular()"><br><br> <br>
+					
+				</form>
+			</div>
+			
+		</div>
+
+		<div class="abajo">
+			
+			<div class="domino">
+	           <table id="tabla" border="1px" >
+	           <div id="log"></div>
+	       </div>
+			
+		</div>
+
+
+
+	</div>
+	
+
+
+	<script>
+
+	function mostrar()
+
+	{
+        document.getElementById('log').innerHTML="";
+		var filas=document.getElementById('filas').value;
+		var columnas=document.getElementById('columnas').value;
+		var filas_columnas="";
+		filas=parseFloat(filas);
+
+		
+		//segunda parte
+		for (i=0; i<filas; i++)
+			{
+
+				for (j=0; j<columnas; j++)
+				{
+					if((i+j)%2==1)
+					{
+						filas_columnas+=("<td width='50px' height='50px'><img src='fotos/3.jpg' width='50px' height='50px'/></td>");
+						
+						
+					}
+					else
+					{
+						filas_columnas+=("<td width='30px' height='50px'></td>");
+					}
+					
+
+				}
+				filas_columnas+=("<tr>");
+
+				
+			}
+
+
+			
+			document.getElementById('tabla').innerHTML=filas_columnas;
+
+	}
+
+	
+	function calcular()
+	{
+        document.getElementById("log").innerHTML="";
+        document.getElementById("tabla").innerHTML="";
+		var ini=3
+		var fin=5
+		
+		
+		var contador1=0;
+
+			while(parseFloat(ini)<=parseFloat(fin))
+		{
+			if(contador1==0)
+				{
+					document.getElementById("log").innerHTML+="inicio de la tabla del "+ini+"<br>";
+				}
+				else
+				{
+
+				}
+
+			for(var i=1; i<=10;i++)
+			{
+				document.getElementById("log").innerHTML+=ini+" x " + i + " = "+ ini*i+"<br>";
+
+				contador1+=1
+				if(contador1==5)
+				{
+					document.getElementById("log").innerHTML+="medio de la tabla del "+ini+"<br>";
+				}
+				else
+				{
+
+				}
+
+				if(contador1==10)
+				{
+					document.getElementById("log").innerHTML+="fin de la tabla del "+ini+"<br>"+"<br>";
+				}
+				else
+				{
+
+				}
+				
+			}
+
+			contador1=0;
+			ini=parseFloat(ini)+1;
+
+		}
+	
+
+		
+	}
+
+	</script>
+
+
+
+
+
+	
+</body>
+</html>
